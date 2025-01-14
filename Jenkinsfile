@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'mvn clean package -ntp -U -DskipTests'
+                bash 'mvn clean package -ntp -U -DskipTests'
                 echo 'Dandole a las pruebas des esa madre'
             }
         }
