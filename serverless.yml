@@ -22,7 +22,7 @@ frameworkVersion: "3"
 
 provider:
   name: aws
-  runtime: nodejs18.x
+  runtime: java8
   profile: alejandroAws
   stage: ${opt:stage, 'sandbox'}  
 
