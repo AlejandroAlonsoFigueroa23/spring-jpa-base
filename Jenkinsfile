@@ -17,9 +17,8 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                withCredentials(credentials: 'alejandroAws', region: 'us-east-1') {
-                    bat 'serverless deploy'
-                    echo 'Según desplegando todo mockeado je'      
+                withAWS(credentials: 'alejandroAws', region: 'us-east-1') {
+                    bat 'serverless deploy --verbose'
                 }
             }
         }
