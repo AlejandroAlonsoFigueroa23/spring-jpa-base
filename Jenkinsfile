@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                withAWS(profile:'alejandroAws') {
+                withAWS() {
                     bat 'serverless deploy --verbose'
                 }
             }
