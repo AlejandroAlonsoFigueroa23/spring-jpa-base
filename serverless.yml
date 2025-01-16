@@ -114,3 +114,5 @@ functions:
 #     NewOutput:
 #       Description: "Description for the output"
 #       Value: "Some output value"
+package:
+  artifact: target/conciliation-0.1.jar
