@@ -20,7 +20,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 withAWS() {
-                    bat 'serverless deploy --verbose'
+                    bat 'serverless deploy --verbose --stage ${DEPLOY_ENV}'
                 }
             }
         }
