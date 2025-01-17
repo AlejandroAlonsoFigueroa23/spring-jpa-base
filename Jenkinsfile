@@ -13,15 +13,16 @@ pipeline {
         }
         stage('Test') {
             steps {
-                bat 'mvn clean install -DskipTests'
+                //bat 'mvn clean install -DskipTests'
                 echo 'Dandole a las pruebas des esa madre'
             }
         }
         stage('Deploy') {
             steps {
-                withAWS() {
-                    bat 'serverless deploy --verbose --stage '+ENV
-                }
+                echo 'Supuestamente desplegando ...'
+                //withAWS() {
+                //    bat 'serverless deploy --verbose --stage '+ENV
+                //}
             }
         }
     }
