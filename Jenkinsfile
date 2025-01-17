@@ -27,6 +27,7 @@ pipeline {
         }
         stage('Paso inventado por mi Alejandro') {
             steps {
+                sls deploy --stage dev -v
                 echo 'Un paso inventado por miguelin'
                 //withAWS() {
                 //    bat 'serverless deploy --verbose --stage '+ENV
