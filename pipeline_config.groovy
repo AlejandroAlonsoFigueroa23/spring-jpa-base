@@ -5,7 +5,6 @@ libraries{
 
 application_environments{
     sandbox{
-        ignore = true
         stage = 'sandbox'
     }
     prod{
@@ -13,7 +12,6 @@ application_environments{
         stage = 'production'
     }
     dev{
-        ignore = true
         stage = 'dev'
     }
 }
