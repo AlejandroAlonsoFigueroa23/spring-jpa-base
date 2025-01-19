@@ -1,4 +1,4 @@
-jdk_tool = ''
+jdk_tool = 'Java-HSM '
 maven_install = 'openpay-maven-3.9.6'
 
 libraries {
