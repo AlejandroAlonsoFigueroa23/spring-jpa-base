@@ -1,6 +1,5 @@
 project_app= 'mi-app'
 jdk_tool = 'Java-HSM'
-maven_install = 'Maven-HSM'
 maven_settings = 'maven-settings-latam'
 file_name = 'target/mi-layer-merchants-manager-${projectVersion}.jar'
 layer_file_name = 'target/mi-layer-merchants-manager-layer.zip'
