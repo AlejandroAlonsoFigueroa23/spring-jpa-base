@@ -9,9 +9,9 @@ libraries {
 application_environments {
     dev {
     	ignore = false
-    	ecr_registry = '378653672129.ecr_no_existe.amazonaws.com'
+    	ecr_registry = '232432.ecr_no_existe.amazonaws.com'
         ecr_region = 'us-east-1'
-        aws_cred_id = 'aws-openpay-dev'
+        aws_cred_id = 'aws-alejandro-id-noexiste'
         ecr_repo_name = 'ecr_no_existe_jejej'
     }
     
