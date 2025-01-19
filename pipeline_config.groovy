@@ -1,39 +1,38 @@
+project_app= 'mi-app'
 jdk_tool = 'Java-HSM'
-maven_install = 'openpay-maven-3.9.6'
-file_name = "build/distributions/mi-artfefacto.zip"
-layer_file_name = "build/distributions/mi-artfefacto-layer.zip"
-handler = "paquete.submodule.functionality.handler.MyHandler"
+maven_install = 'Maven-HSM'
+maven_settings = 'maven-settings-latam'
+file_name = 'target/mi-layer-merchants-manager-${projectVersion}.jar'
+layer_file_name = 'target/mi-layer-merchants-manager-layer.zip'
+handler = 'mx.handler.MiHandler::handleRequest'
+snap_start = 'false'
 
-libraries {
-	maven
-	ecr
+libraries{
+    maven
+    lambda
 }
 
-application_environments {
-    dev {
-    	ignore = false
-    	ecr_registry = '232432.ecr_no_existe.amazonaws.com'
-        ecr_region = 'us-east-1'
-        aws_cred_id = 'aws-alejandro-id-noexiste'
-        ecr_repo_name = 'ecr_no_existe_jejej'
-	lambda_region = "us-east-1"
-        function_name = "demo-function-dev"
-        vars = [
-            MICRONAUT_ENVIRONMENTS:"DEVELOP"
-        ]    
+application_environments{
+    dev{
+        lambda_conf {
+            mx {
+                lambda_region='us-east-1'
+                function_name='mi_funcion_dsfds'
+            }
+        }
+        vars = []
     }
-    
-    qa {
-    	ignore = true
+    qa{
+         ignore = true
     }
-    
-    sandbox {
-    	ignore = true
+    sandbox{
+         ignore = true
     }
-    
-    prod {
-    	ignore = true
+    prod{
+        ignore = true
     }
 }
 
-release_active = true
+aws_account='mi_cuenta_imaginaria'
+release_active = false
+
