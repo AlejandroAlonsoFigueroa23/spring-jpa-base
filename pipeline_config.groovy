@@ -1,5 +1,6 @@
 project_app= 'mi-app'
 jdk_tool = 'Java-HSM'
+maven_install = 'openpay-maven-3.9.6'
 file_name = 'target/mi-layer-merchants-manager-${projectVersion}.jar'
 layer_file_name = 'target/mi-layer-merchants-manager-layer.zip'
 handler = 'mx.handler.MiHandler::handleRequest'
