@@ -8,7 +8,7 @@ snap_start = 'false'
 
 libraries{
     maven
-    lambda
+    s3
 }
 
 application_environments{
